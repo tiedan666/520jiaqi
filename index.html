@@ -11,7 +11,7 @@
 
     
     <link rel="stylesheet" href="css/normalize.css">
-
+    <link rel="stylesheet" href="css/player.css">
     
         <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
@@ -105,7 +105,23 @@
 
     
         <script src="js/prefixfree.min.js"></script>
+<script>
+	var	playlist = [
+	{title:"星茶会",artist:"我永远爱李佳琪～",mp3:"http://wszyz.7899.cf/bg.mp3",cover:"http://wszyz.7899.cf/ljq.jpg",},
+];
+  var isRotate = true;
+  var autoplay = true;
+</script>
+<script src="js/player.js"></script>
+<script>
 
+function bgChange(){
+	var lis= $('.lib');
+	for(var i=0; i<lis.length; i+=2)
+	lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+}
+window.onload = bgChange;
+</script>
     
 <link rel="stylesheet" href="APlayer/APlayer.min.css">    
   </head>
