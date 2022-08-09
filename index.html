@@ -102,9 +102,41 @@
 }
 
     </style>
+<!--播放器 -->
 
-    
-        <script src="js/prefixfree.min.js"></script>
+<div id="QPlayer">
+<div id="pContent">
+	<div id="player">
+		<span class="cover"></span>
+		<div class="ctrl">
+			<div class="musicTag marquee">
+				<strong>Title</strong>
+				 <span> - </span>
+				<span class="artist">Artist</span>
+			</div>
+			<div class="progress">
+				<div class="timer left">0:00</div>
+				<div class="contr">
+					<div class="rewind icon"></div>
+					<div class="playback icon"></div>
+					<div class="fastforward icon"></div>
+				</div>
+				<div class="right">
+					<div class="liebiao icon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ssBtn">
+	        <div class="adf"></div>
+    </div>
+</div>
+<ol id="playlist"></ol>
+</div>   
+        <script src="js/prefixfree.min.js">
+  <script src="js/jquery.min.js"></script>
+<script src="js/jquery.marquee.min.js">
+</script>
 <script>
 	var	playlist = [
 	{title:"星茶会",artist:"我永远爱李佳琪～",mp3:"http://wszyz.7899.cf/bg.mp3",cover:"http://wszyz.7899.cf/ljq.jpg",},
